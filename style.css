@@ -14,7 +14,7 @@
   --card-bg: hsl(0, 0%, 100%);
   --text-color: hsl(0, 0%, 7%);
   --border-color: hsl(0, 0%, 7%);
-  --border-radius: 1rem;
+  --border-radius: 1.5rem;
   --margin-block-end: 1rem;
 }
 
@@ -45,25 +45,27 @@ body,main {
     height: 12.5rem;
     margin: 0;
     object-fit: cover;
-    border-radius: 1rem;
+    border-radius: 0.6rem;
     margin-block-end: 1.2rem;
 }
 
 .tag {
     display: block;
     background: var(--primary-bg);
-    max-width: fit-content;
-    padding: .3rem .6rem;
+    max-width: 5.2rem;
+    padding: .4rem;
     border-radius: .3rem;
     margin-block-end: var(--margin-block-end);
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    font-weight: 800;
 }
 
 time {
     display: block;
     color: var(--text-color);
     font-size: .85rem;
+    font-weight: 500;
     margin-block-end: var(--margin-block-end);
 }
 
@@ -80,6 +82,10 @@ a:hover {
     color: var(--primary-bg);
 }
 
+a:focus {
+    color: var(--primary-bg);
+    text-decoration: underline;
+}
 
 p {
     font-size: .88rem;
@@ -92,8 +98,8 @@ p {
 .author-info {
     display: flex;
     align-items: center;
-    gap: .8rem;
-    margin-block-end: calc(var(--margin-block-end)/2);
+    gap: .7rem;
+    margin-block-end: 0;
 }
 
 .avatar {
@@ -103,8 +109,8 @@ p {
 }
 
 .author {
-    font-size: .8rem;
-    font-weight: bolder;
+    font-size: .9rem;
+    font-weight: 800;
     color: var(--text-color);
 }
 
@@ -112,4 +118,31 @@ p {
 /* Utility classes */
 .hidden {
   display: none;
+}
+
+
+/* Media Queries */
+@media (min-width: 600px) {
+  .card {
+    max-width: 24.6rem;
+    padding: 1.5rem;
+  }
+
+  .card-image-wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .card-image {
+    object-fit: cover;
+    border-radius: .6rem;
+  }
+
+  a {
+    font-size: 1.56rem;
+  }
+
+  p {
+    font-size: 1.05rem;
+  } 
 }
