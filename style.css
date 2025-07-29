@@ -1,0 +1,115 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Root variables */
+:root {
+  --font-family: 'Figtree', sans-serif;
+  --primary-bg: hsl(47, 88%, 63%);
+  --card-bg: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 0%, 7%);
+  --border-color: hsl(0, 0%, 7%);
+  --border-radius: 1rem;
+  --margin-block-end: 1rem;
+}
+
+/* Body styles */
+body,main {
+  height: 100vh;
+  padding: .5rem;
+  background: var(--primary-bg);
+  font-family: var(--font-family);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card styles */
+.card {
+    background: var(--card-bg);
+    max-width: 25rem;
+    padding: 1.2rem;
+    border: .1rem solid var(--border-color);
+    border-radius: var(--border-radius);
+    box-shadow: 8px 8px 0 0 var(--border-color);
+}
+
+.card-image {
+    width: 100%;
+    height: 12.5rem;
+    margin: 0;
+    object-fit: fill;
+    border-radius: 1.4rem;
+    margin-block-end: 1.2rem;
+}
+
+.tag {
+    display: block;
+    background: var(--primary-bg);
+    max-width: fit-content;
+    padding: .3rem .6rem;
+    border-radius: .3rem;
+    margin-block-end: var(--margin-block-end);
+    text-align: center;
+    font-size: .8rem;
+}
+
+time {
+    display: block;
+    color: var(--text-color);
+    font-size: .85rem;
+    margin-block-end: var(--margin-block-end);
+}
+
+a {
+    display: block;
+    font-size: 1.4rem;
+    margin-block-end: var(--margin-block-end);
+    font-weight: 800;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-bg);
+}
+
+
+p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-block-end: 1.5rem;
+    color: hsl(0, 0%, 42%)
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    margin-block-end: calc(var(--margin-block-end)/2);
+}
+
+.avatar {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.author {
+    font-size: .8rem;
+    font-weight: bolder;
+    color: var(--text-color);
+}
+
+
+/* Utility classes */
+.hidden {
+  display: none;
+}
