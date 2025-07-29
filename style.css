@@ -33,7 +33,7 @@ body,main {
 /* Card styles */
 .card {
     background: var(--card-bg);
-    max-width: 25rem;
+    max-width: 24rem;
     padding: 1.2rem;
     border: .1rem solid var(--border-color);
     border-radius: var(--border-radius);
@@ -44,9 +44,10 @@ body,main {
     width: 100%;
     height: 12.5rem;
     margin: 0;
-    object-fit: fill;
-    border-radius: 1.4rem;
+    object-fit: cover;
+    border-radius: 1rem;
     margin-block-end: 1.2rem;
+    background-color: yellow;
 }
 
 .tag {
@@ -57,7 +58,7 @@ body,main {
     border-radius: .3rem;
     margin-block-end: var(--margin-block-end);
     text-align: center;
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 time {
@@ -69,7 +70,7 @@ time {
 
 a {
     display: block;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-block-end: var(--margin-block-end);
     font-weight: 800;
     color: var(--text-color);
